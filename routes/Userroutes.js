@@ -14,5 +14,5 @@ router.post('/send-reset-password-email',UserController.Resetpasswordemail)
 router.post('/reset_password/:id/:token',UserController.passwordreset)
 //protected route
 router.get("/loggeduser",UserController.detaillogineduser)
-router.post('/changepassword',UserController.changepassword)
+router.put('/changepassword',UserController.changepassword)
 export default router;
